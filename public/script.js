@@ -1,5 +1,5 @@
 setInterval(changeImage, 7500);
-window.onscroll = function() {headerStick()};
+window.addEventListener("scroll", scroll);
 
 const homeSlideshowImg = [
     "img/chateau_frontenac_0.jpg",
@@ -20,7 +20,6 @@ const homeImg = document.getElementById("home-img");
 const homeImgText = document.getElementById("home-img-text");
 
 var header = document.getElementById("header");
-var sticky = header.offsetTop;
 var slideshowCurrentImgIndex = 1;
 
 function changeImage() {
@@ -34,11 +33,10 @@ function changeImage() {
     slideshowCurrentImgIndex++;
 }
 
-function headerStick() {
+function scroll() {
+    var sticky = header.offsetTop;
+    
     if (window.pageYOffset > sticky) {
         header.style.position = "fixed";
-    }
-    else {
-        header.style.position = "none";
     }
 }
