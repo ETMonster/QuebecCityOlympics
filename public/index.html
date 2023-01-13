@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-full h-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,27 +52,25 @@
             </nav>
         </div><!-- End navigation -->
 
-        <main>
-            <div>
-                <div class="float-left">
-                    <div class="h-full w-20 bg-blue-500 absolute left-0"></div>
-                    <div class="h-full w-20 bg-red-500 absolute left-20"></div>
-                    <div class="h-full w-20 bg-yellow-500 absolute left-40"></div>
-                    <div class="h-full w-20 bg-green-500 absolute left-60"></div>
-                </div>
-                <div class="float-right">
-                    <div class="h-full w-20 bg-blue-500 absolute right-0"></div>
-                    <div class="h-full w-20 bg-red-500 absolute right-20"></div>
-                    <div class="h-full w-20 bg-yellow-500 absolute right-40"></div>
-                    <div class="h-full w-20 bg-green-500 absolute right-60"></div>
-                </div>
+        <main class="relative">
+            <div class="float-left h-screen w-1">
+                <div class="h-[100%] w-20 bg-blue-500 absolute left-0"></div>
+                <div class="h-full w-20 bg-red-500 absolute left-20"></div>
+                <div class="h-full w-20 bg-yellow-500 absolute left-40"></div>
+                <div class="h-full w-20 bg-green-500 absolute left-60"></div>
+            </div>
+            <div class="float-right h-screen w-1">
+                <div class="h-full w-20 bg-blue-500 absolute right-0"></div>
+                <div class="h-full w-20 bg-red-500 absolute right-20"></div>
+                <div class="h-full w-20 bg-yellow-500 absolute right-40"></div>
+                <div class="h-full w-20 bg-green-500 absolute right-60"></div>
             </div>
             <div>
                 <div>
                     <img src="img/logo.png" alt="Logo" class="w-1/6 mx-auto pt-10" />
                     <hr class="w-60 h-1 mx-auto bg-main rounded opacity-50">
                     <h1 class="text-4xl font-black text-main grid place-items-center pt-20">Quebec City Winter Olympics 2030</h1>  
-                    <p class="text-xl text-main grid place-items-center px-[750px] pt-10 pb-20">
+                    <p class="text-xl text-main grid place-items-center px-[40%] pt-10 pb-20">
                         The Winter Olympic Games were made for Quebec City’s sprawling atmosphere and unique, complex culture. Quebec City’s landmarks such as the Chateau de Frontenac,
                         the Plains of Abraham and many others make the city striking and indistinguishable from any other. Quebec City’s vast downtown has a multitude of restaurant 
                         choices with many different cuisines and tastes. A variety of shops and markets are available all throughout the year, including the Winter Carnival in the 
@@ -82,7 +80,97 @@
                 <hr class="w-60 h-1 mx-auto bg-main rounded opacity-50">
                 <div>
                     <h1 class="text-4xl font-black text-main grid place-items-center pt-20">The Logo</h1>
-                    <img src="img/logo.png" alt="Logo" class="w-1/4  mx-auto shadow-2xl pt-10" />
+                    <img src="img/logo.png" alt="Logo" class="w-1/4 mx-auto shadow-2xl pt-10 hover:w-2/6 transition-all" />
+                </div>
+            </div>
+            <div>
+                <p class="text-xl text-main grid place-items-center px-[40%] pt-10 pb-10">
+                    The logo was made with keeping Quebec City's image and culture in mind. The first choice and the best choice, the Chateau de Frontenac's shape is featured front and center
+                    on the Quebec City Winter Olympic Games 2030 logo, overlayed by traditional Olympic colours were chosen to keep the integrity and beauty of the games intact and as amazing as spectators
+                    around the world see it today, watching their home country's world-class atheletes traverse their way to the world sports podium.
+                </p>
+                <p class="text-xl text-main grid place-items-center px-[40%] pb-10">
+                    The year at which the games are taking place, "2030", are prominently shown in the logo as a window to the future.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg text-main grid place-items-center px-[40%] font-light">
+                    Typeface:
+                </h4>
+                <h2 class="text-6xl text-main grid place-items-center px-[40%] pb-10 font-black">
+                    Poppins
+                </h2>
+            </div>
+            <div>
+                <h4 class="text-lg text-main grid place-items-center px-[40%] font-light">
+                    Colours:
+                </h4>
+                <div>
+                    <div class="grid place-items-center">
+                        <div class="grid grid-cols-3 gap-16 px-[80%] pt-6">
+                            <div class="w-10 h-10 bg-main rounded-full"></div>
+                            <div>
+                                <div class="text-lg text-main px-[40%] font-light">
+                                    #1c2e39
+                                </div>
+                                <div class="text-sm text-main px-[40%] font-light w-40">
+                                    Base font colour
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid place-items-center">
+                        <div class="grid grid-cols-3 gap-16 px-[80%] pt-6">
+                            <div class="w-10 h-10 bg-logo-blue rounded-full"></div>
+                            <div>
+                                <div class="text-lg text-main px-[40%] font-light">
+                                    #0081c8
+                                </div>
+                                <div class="text-sm text-main px-[40%] font-light w-40">
+                                    Logo blue
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid place-items-center">
+                        <div class="grid grid-cols-3 gap-16 px-[80%] pt-6">
+                            <div class="w-10 h-10 bg-logo-yellow rounded-full"></div>
+                            <div>
+                                <div class="text-lg text-main px-[40%] font-light">
+                                    #fcb131
+                                </div>
+                                <div class="text-sm text-main px-[40%] font-light w-40">
+                                    Logo yellow
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid place-items-center">
+                        <div class="grid grid-cols-3 gap-16 px-[80%] pt-6">
+                            <div class="w-10 h-10 bg-logo-red rounded-full"></div>
+                            <div>
+                                <div class="text-lg text-main px-[40%] font-light">
+                                    #ee334e
+                                </div>
+                                <div class="text-sm text-main px-[40%] font-light w-40">
+                                    Logo red
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid place-items-center pb-32">
+                        <div class="grid grid-cols-3 gap-16 px-[80%] pt-6">
+                            <div class="w-10 h-10 bg-logo-green rounded-full"></div>
+                            <div>
+                                <div class="text-lg text-main px-[40%] font-light">
+                                    #00a651
+                                </div>
+                                <div class="text-sm text-main px-[40%] font-light w-40">
+                                    Logo green
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
