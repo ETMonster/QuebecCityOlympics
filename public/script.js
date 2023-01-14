@@ -19,7 +19,6 @@ const homeSlideshowImgCaption = [
 const homeImg = document.getElementById("home-img");
 const homeImgText = document.getElementById("home-img-text");
 
-var header = document.getElementById("header");
 var slideshowCurrentImgIndex = 1;
 
 function changeImage() {
@@ -33,10 +32,5 @@ function changeImage() {
     slideshowCurrentImgIndex++;
 }
 
-function scroll() {
-    var sticky = header.offsetTop;
-    
-    if (window.pageYOffset > sticky) {
-        header.style.position = "fixed";
-    }
-}
+var header = document.getElementById("header");
+header.style.position = "fixed";
